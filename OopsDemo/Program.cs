@@ -74,6 +74,10 @@ namespace OopsDemo
             //    s.DisplayDetails();
             //}
 
+            Console.WriteLine("College Name " + Student.collegeName);
+            //Student.batch = "DotNet";
+            //Console.WriteLine("Batch Name " + Student.batch);
+            Student.BatchDetails();
             List<Student> students = new List<Student>();
             Student s1 = new Student();
             s1.GetDetails();

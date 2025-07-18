@@ -20,16 +20,25 @@ namespace OopsDemo
     {
         int rn;
         string name;
-        string batch;
+        public static string batch;
         int score;
+        public const string collegeName = "ABC";
+        public static void BatchDetails()
+        {
+            //name = "aaa";
+            batch = "DotNet";
+            Console.WriteLine("Batch is "+ batch);
+
+        }
         public void GetDetails()
         {
+            
             Console.WriteLine("enter rn");
             rn = byte.Parse(Console.ReadLine());
             Console.WriteLine("enter name");
             name = Console.ReadLine();
-            Console.WriteLine("enter batch");
-            batch = Console.ReadLine();
+            //Console.WriteLine("enter batch");
+            //batch = Console.ReadLine();
             Console.WriteLine("enter score");
             score = byte.Parse(Console.ReadLine());
 
@@ -38,7 +47,7 @@ namespace OopsDemo
         {
             Console.WriteLine($"RN is {rn}");
             Console.WriteLine($"Name is {name}");
-            Console.WriteLine($"Batch is {batch}");
+            //Console.WriteLine($"Batch is {batch}");
             Console.WriteLine($"Score is {score}");
         }
 
